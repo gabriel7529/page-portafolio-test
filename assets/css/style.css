@@ -43,8 +43,9 @@ CSS INDEX
 :root {
   --black: #000;
   --white: #fff;
-  --ul-primary: #7065F0;
-  --ul-secondary: #000929;
+  /*--ul-primary: #070140 #00EAD6 #28265B #18164d;; #00b8a8;*/
+  --ul-primary: #19c7b8;
+  --ul-secondary: #14125c;
   --ul-gray: #EBEBEB;
   --ul-black: #111111;
   --ul-gray2: #6C6E76;
@@ -215,9 +216,9 @@ button {
 }
 
 .ul-inner-page-content-wrapper {
-  padding-top: clamp(60px, 6.31vw, 120px);
+  padding-top: clamp(40px, 6.31vw, 80px);
   padding-bottom: clamp(60px, 6.31vw, 120px);
-  padding-bottom: 0;
+  padding-bottom: 15;
 }
 
 .ul-section-spacing {
@@ -306,7 +307,20 @@ button {
   justify-content: space-between;
   gap: clamp(20px, 1.58vw, 30px);
   margin-bottom: clamp(20px, 2.1vw, 40px);
+  padding: 20px;
+ 
 }
+
+.ul-section-heading-contacto {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  gap: clamp(20px, 1.58vw, 30px);
+  margin-bottom: clamp(20px, 2.1vw, 40px);
+  padding: 30px;
+  background-color: var(--ul-primary);
+}
+
 @media screen and (max-width: 575px) {
   .ul-section-heading {
     flex-direction: column;
@@ -326,23 +340,15 @@ button {
   margin-bottom: clamp(7px, 0.89vw, 17px);
   display: inline-block;
 }
-.ul-section-title {
-  font-weight: 700;
-  font-size: clamp(25px, 2.1vw, 40px);
-  letter-spacing: -0.03em;
-  color: var(--black);
-  margin-bottom: 0;
-  font-weight: 700;
-  letter-spacing: 0.01em;
-  margin-bottom: clamp(5px, 0.42vw, 8px);
-}
+
+
 .ul-section-descr {
   font-size: clamp(13px, 0.84vw, 16px);
   margin-bottom: 0;
 }
 
 .ul-breadcrumb {
-  background: url(../img/breadcrumb-bg.jpg) no-repeat center center;
+  background: url(../img/Foto_playa.jpg) no-repeat center center; /*Para la página principal*/
   background-size: cover;
   padding: clamp(50px, 6.31vw, 120px) 15px;
   padding-top: clamp(128px, 10.4vw, 198px);
@@ -1218,8 +1224,10 @@ button {
 }
 .ul-banner-slide {
   padding: clamp(250px, 16.29vw, 310px) clamp(15px, 5.25vw, 100px) clamp(180px, 12.61vw, 240px);
-  background: url(../img/banner-slide-1.jpg) no-repeat center center;
+  /*background: url(../img/banner-slide-1.jpg) no-repeat center center;*/
   background-size: cover;
+  background-position: center;
+  background-repeat: no-repeat;
   position: relative;
   z-index: 1;
   padding-top: clamp(130px, 13.03vw, 248px);
@@ -1238,7 +1246,8 @@ button {
   position: absolute;
   content: "";
   inset: 0;
-  background: linear-gradient(90deg, #000929 0%, rgba(0, 9, 41, 0.5) 100%);
+  /*background: linear-gradient(90deg, #000929 0%, rgba(0, 9, 41, 0.5) 100%);*/
+  background: linear-gradient(90deg, #14125c 0%, rgba(0, 30, 138, 0.5) 100%);
   z-index: -1;
 }
 .ul-banner-slide-txt {
@@ -1312,6 +1321,8 @@ button {
   width: clamp(178px, 12.51vw, 238px);
   aspect-ratio: 1/1;
   border-radius: 999px;
+  object-fit: cover;
+  display: block;
 }
 .ul-banner-slide-img a {
   position: absolute;
@@ -1732,7 +1743,7 @@ button {
   content: "";
   position: absolute;
   inset: 0;
-  background: url(../img/featured-properties-bg.jpg) no-repeat center center;
+  background: url(../img/Foto_playa.jpg) no-repeat center center; /*Para la página principal*/
   background-size: cover;
   background-attachment: fixed;
   opacity: 10%;
@@ -1934,9 +1945,16 @@ button {
   border-bottom: 1px solid #EBEBEB;
   padding: clamp(27px, 1.58vw, 30px) 0;
 }
+
+.ul-facilities-txt {
+  padding: 15px;
+  
+}
+
 .ul-facilities-txt ul li {
   margin-bottom: clamp(12px, 0.79vw, 15px);
   font-size: clamp(12px, 0.79vw, 15px);
+  
 }
 .ul-facilities-txt ul li::before {
   content: "\f124";
@@ -2192,7 +2210,7 @@ button {
   position: absolute;
   content: "";
   inset: 0;
-  background-image: url(../img/stat-bg-hover.png);
+  /*background-image: url(../img/stat-bg-hover.png);*/
   background-size: cover;
   mix-blend-mode: multiply;
   opacity: 0;
@@ -2200,6 +2218,23 @@ button {
   z-index: -1;
   border-radius: 50%;
 }
+
+.ul-stats-item.item-1::before {
+  background-image: url(../img/asesorescomerciales.jpg);
+}
+
+.ul-stats-item.item-2::before {
+  background-image: url(../img/altaproyeccion.jpg);
+}
+
+.ul-stats-item.item-3::before {
+  background-image: url(../img/financiamiento.jpg);
+}
+
+.ul-stats-item.item-4::before {
+  background-image: url(../img/ubicacion.jpg);
+}
+
 .ul-stats-item:hover {
   background-color: var(--ul-primary);
 }
@@ -2583,12 +2618,13 @@ button {
   position: absolute;
   inset: 0;
   z-index: -1;
-  background: url("../img/testimonial-bg.jpg") no-repeat center center/cover fixed;
+  background: url("../img/chico_feliz.jpg") no-repeat center center/cover fixed;
   opacity: 10%;
 }
-.ul-testimonial-img {
-  padding-right: clamp(30px, 3.15vw, 60px);
-}
+/* .ul-testimonial-img {
+  width: 80%;
+  
+}  */
 @media screen and (max-width: 991px) {
   .ul-testimonial-img {
     padding-right: 0;
@@ -2596,7 +2632,10 @@ button {
 }
 .ul-testimonial-img img {
   border-radius: 0 999px 999px 0;
+  
   overflow: hidden;
+  object-fit: cover;
+  display: block;
 }
 @media screen and (max-width: 991px) {
   .ul-testimonial-img img {
@@ -2770,13 +2809,13 @@ button {
   z-index: 1;
 }
 .ul-footer-top {
-  padding: clamp(112px, 11.3vw, 215px) 0 clamp(20px, 3.15vw, 60px);
-  background: linear-gradient(90deg, rgba(247, 247, 253, 0.5) 0%, #F7F7FD 50.17%, rgba(247, 247, 253, 0.5) 100%);
+  padding: clamp(70px, 11.3vw, 120px) 0 clamp(20px, 3.15vw, 60px);
+  background: linear-gradient(90deg, rgb(0, 0, 48) , rgba(0, 0, 49, 0.829) 100%);
 }
 .ul-footer-top-wrapper {
   display: flex;
   flex-wrap: wrap;
-  justify-content: space-between;
+  justify-content: space-around;
   gap: 35px;
 }
 .ul-footer-about {
@@ -2799,10 +2838,10 @@ button {
   font-size: clamp(15px, 0.95vw, 18px);
 }
 .ul-footer-socials a {
-  color: rgba(0, 0, 0, 0.3);
+  color: rgba(135, 137, 138, 0.452);
 }
 .ul-footer-socials a:hover {
-  color: var(--ul-primary);
+  color: var(--white);
 }
 .ul-footer .single-column {
   flex-shrink: 0;
@@ -2813,15 +2852,32 @@ button {
   }
 }
 @media screen and (max-width: 575px) {
-  .ul-footer .single-column {
+  .ul-footer .single-column{
     border-top: 1px solid rgba(0, 0, 0, 0.1);
     padding-top: 30px;
     display: flex;
     gap: 30px;
     width: 100%;
-  }
+    align-items: center;
+    flex-direction: column;
+    text-align: center;
+    }
   .ul-footer .single-column > * {
     width: 50%;
+  }
+
+  .ul-footer-about a {
+    text-align: center;
+    align-items: center;
+    width: 100%;
+  }
+  .ul-footer-about-txt {
+    text-align: center;
+  }
+
+  .ul-footer .single-column .ul-footer-widget-links a{
+    text-align: center;
+    width: 100%;
   }
 }
 .ul-footer-widget {
@@ -2833,20 +2889,27 @@ button {
 .ul-footer-widget-title {
   font-weight: 700;
   font-size: clamp(13px, 0.84vw, 16px);
-  color: var(--ul-secondary);
+  color: var(--white);
   margin-bottom: clamp(11px, 1.1vw, 21px);
 }
 .ul-footer-widget-links {
   display: flex;
   flex-direction: column;
   align-items: flex-start;
-  gap: clamp(10px, 0.68vw, 13px);
+  gap: clamp(10px, 0.68vw, 33px);
 }
 .ul-footer-widget-links a {
   display: inline-block;
   color: var(--ul-gray2);
   font-size: clamp(13px, 0.84vw, 16px);
 }
+
+.ul-footer-widget-links p {
+  display: inline-block;
+  color: var(--ul-gray2);
+  font-size: clamp(13px, 0.84vw, 16px);
+  margin-bottom: 0;
+} 
 .ul-footer-widget-links a:hover {
   color: var(--ul-primary);
 }
@@ -5323,7 +5386,7 @@ button {
 .ul-contact-infos-sub-title {
   font-weight: 400;
   font-size: clamp(15px, 0.95vw, 18px);
-  color: #C9C9C9;
+  color: #04004d5c;
 }
 .ul-contact-infos > * {
   color: var(--white);

@@ -359,7 +359,7 @@ document.addEventListener("DOMContentLoaded", (event) => {
             autoWidth: true,
             gap: 15,
             autoScroll: {
-                speed: 1.5,
+                speed: 0.5,
             },
         }).mount(window.splide.Extensions);
     };
@@ -367,7 +367,8 @@ document.addEventListener("DOMContentLoaded", (event) => {
 
     // featured properties slider
     new Swiper(".ul-featured-properties-slider", {
-        slidesPerView: 4,
+        slidesPerView: 'auto',
+        slidesPerView: 5,
         loop: true,
         autoplay: true,
         navigation: {
@@ -386,6 +387,7 @@ document.addEventListener("DOMContentLoaded", (event) => {
             },
             1400: {
                 slidesPerView: 4,
+                
             }
         }
     });

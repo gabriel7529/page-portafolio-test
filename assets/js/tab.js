@@ -25,3 +25,18 @@ document.addEventListener("DOMContentLoaded", () => {
         });
     };
 });
+
+// ...existing código de tabs...
+
+function changeTestimonialImg() {
+  var img = document.querySelector('.ul-testimonial-img img');
+  if (img) {
+    if (window.innerWidth <= 991) {
+      img.src = 'assets/img/familia2.jpg';
+    } else {
+      img.src = 'assets/img/familia.jpg';
+    }
+  }
+}
+window.addEventListener('resize', changeTestimonialImg);
+window.addEventListener('DOMContentLoaded', changeTestimonialImg);
