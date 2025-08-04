@@ -360,7 +360,7 @@ button {
   content: "";
   position: absolute;
   inset: 0;
-  background: rgba(112, 101, 240, 0.85);
+  background: rgba(6, 6, 53, 0.75);
   z-index: -1;
 }
 .ul-breadcrumb-title {
