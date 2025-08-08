@@ -1,0 +1,427 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Portafolio - Real Estate HTML Template</title>
+
+    <!-- libraries CSS -->
+    <link rel="stylesheet" href="assets/icon/flaticon_real_estate.css">
+    <link rel="stylesheet" href="assets/vendor/bootstrap/bootstrap.min.css">
+    <link rel="stylesheet" href="assets/vendor/splide/splide.min.css">
+    <link rel="stylesheet" href="assets/vendor/swiper/swiper-bundle.min.css">
+    <link rel="stylesheet" href="assets/vendor/slim-select/slimselect.css">
+    <link rel="stylesheet" href="assets/vendor/animate-wow/animate.min.css">
+
+    <!-- custom CSS -->
+    <link rel="stylesheet" href="assets/css/style.css">
+</head>
+
+<body>
+    <div class="preloader" id="preloader">
+        <div class="loader"></div>
+    </div>
+
+    <!-- HEADER SECTION START -->
+    <header class="ul-header">
+      <div class="ul-header-bottom">
+        <div class="ul-header-bottom-wrapper">
+          <!-- header left -->
+          <div class="header-bottom-left">
+            <div class="logo-container">
+              <a href="index.html" class="d-inline-block"
+                ><img
+                  src="assets/img/portafolio_Logo.png"
+                  alt="logo"
+                  class="logo"
+              /></a>
+            </div>
+          </div>
+
+          <!-- header nav -->
+          <div class="ul-header-nav-wrapper">
+            <div class="to-go-to-sidebar-in-mobile">
+              <nav class="ul-header-nav">
+                <a href="index.html">Inicio</a>
+                <a href="index.html#Nosotros">Nosotros</a>
+                <div class="has-sub-menu">
+                  <a href="projects.html">Proyectos</a>
+                  <div class="ul-header-submenu">
+                    <ul>
+                      <li>
+                        <a href="quinta-natura.html">Quinta Natura</a>
+                      </li>
+                      <li>
+                        <a href="condominio-iki.html">Condominio Iki</a>
+                      </li>
+                      <li>
+                        <a href="hayat-punta-sal.html">Hayat Punta Sal</a>
+                      </li>
+                      <li>
+                        <a href="hayat-zorritos.html">Hayat Zorritos</a>
+                      </li>
+                    </ul>
+                  </div>
+                </div>
+                <div class="has-sub-menu">
+                  <a href="noticias.html">Noticias</a>
+                </div>
+                <a href="contact.html">Contacto</a>
+              </nav>
+            </div>
+          </div>
+          <!-- sidebar opener -->
+          <div class="d-none">
+            <button class="ul-header-sidebar-opener">
+              <i class="flaticon-menu-button"></i>
+            </button>
+          </div>
+        </div>
+      </div>
+    </header>
+    <!-- HEADER SECTION END -->
+
+
+    <main>
+        <!-- BREADCRUMB SECTION START -->
+        <div class="ul-breadcrumb">
+            <div class="wow animate__fadeInUp">
+                <h2 class="ul-breadcrumb-title">Noticias</h2>
+                <div class="ul-breadcrumb-nav">
+                    <a href="index.html">Inicio</a>
+                    <span class="separator"><i class="flaticon-aro-left"></i></span>
+                    <span class="current-page">Noticias</span>
+                </div>
+            </div>
+        </div>
+        <!-- BREADCRUMB SECTION END -->
+
+
+        <!-- BLOG SECTION START -->
+        <div class="ul-inner-page-container">
+            <div class="ul-inner-page-content-wrapper">
+                <div class="row  gy-5">
+                    <!-- Cambiar el tamaño del post noticia -->
+                    <div class="col-lg-8 col-md-7">
+                        <!-- blogs -->
+                        <div>
+                             <!-- single blog -->
+                            <div class="ul-blog-wrapper ul-blog--inner-2">
+                                <div class="ul-blog">
+                                    <div class="ul-blog-img">
+                                        <img src="assets/img/RULETA.png" alt="Blog Image">
+                                        <!-- date -->
+                                        <div class="date">
+                                            <span class="number">01</span>
+                                            <span class="txt">Ago</span>
+                                        </div>
+                                    </div>
+
+                                    <div class="ul-blog-txt">
+                                        <div class="ul-blog-infos">
+                                        </div>
+                                        <a href="#" class="ul-blog-title">¡Gran Promoción Exclusiva en la Feria!</a>
+                                        <p class="ul-blog-excerpt">Durante la feria, Screem Roll invita al público a escanear el código QR y participar en un emocionante sorteo. Podrás ganar premios increíbles como un reloj Invicta, un práctico frigobar o una tarjeta de regalo. Esta promoción es válida únicamente durante el evento, así que no pierdas la oportunidad de registrarte y ser parte de esta experiencia única. ¡Nos vemos en la feria!</p>
+                                        <a href="#"  id="leerMasBtn" class="ul-btn ul-blog-btn">Leer más <span class="icon"><i class="flaticon-aro-left"></i></span></a>
+                                    </div>
+                                </div>
+                            </div>
+
+                            <!-- Modal emergente -->
+                            <div id="miModal" class="modal">
+                                <span class="close">&times;</span>
+                                <img class="modal-content" id="modalImg" src="./assets/img/promo-noticia.png" alt="Descripción">
+                                <div id="caption">Información adicional sobre nuestra participación</div>
+                            </div>
+
+
+
+                            <!-- single blog -->
+                            <div class="ul-blog-wrapper ul-blog--inner-2">
+                                <div class="ul-blog">
+                                    <div class="ul-blog-img">
+                                        <img src="assets/img/noticia-feria/Portada-FIA-noticia.jpg" alt="Blog Image">
+                                        <!-- date -->
+                                        <div class="date">
+                                            <span class="number">24</span>
+                                            <span class="txt">Jul</span>
+                                        </div>
+                                    </div>
+
+                                    <div class="ul-blog-txt">
+                                        <div class="ul-blog-infos">
+                                        </div>
+                                        <a href="#" class="ul-blog-title">¡Estaremos presentes en la Feria Arequipa 2025!</a>
+                                        <p class="ul-blog-excerpt">Nos complace anunciar nuestra participación en la Feria Arequipa 2025, la nueva gran fiesta del sur del país que se realizará del 9 al 17 de agosto en el Centro de Convenciones Cerro Juli. Este evento promete ser mucho más que una feria: reunirá a más de 400 expositores de sectores variados, desde gastronomía y entretenimiento hasta tecnología, moda, belleza e inmobiliaria que es uno de los sectores más dinámicos del evento. No solo llevaremos nuestros mejores proyectos inmobiliarios, sino que también ofreceremos asesoría para que adquieras uno lote en alguno de nuestros proyectos, en donde la inversión va valer la pena por tener una casa ideal frente al mar o en el campo. . Esta será una oportunidad contundente para conectar directamente con potenciales inversores y clientes en un entorno festivo lleno de cultura, gastronomía y espectáculos. ¡Nos vemos ahí!</p>
+                                        <a href="#" class="ul-btn ul-blog-btn">Leer más <span class="icon"><i class="flaticon-aro-left"></i></span></a>
+                                    </div>
+                                </div>
+                            </div>
+
+                            
+
+
+                            <!-- single blog -->
+                            <div class="ul-blog-wrapper ul-blog--inner-2">
+                                <div class="ul-blog">
+                                    <div class="ul-blog-img">
+                                        <img src="assets/img/portada_noticia_quinta.png" alt="Blog Image">
+                                        <!-- date -->
+                                        <div class="date">
+                                            <span class="number">04</span>
+                                            <span class="txt">Abr</span>
+                                        </div>
+                                    </div>
+
+                                    <div class="ul-blog-txt">
+                                        <div class="ul-blog-infos">
+                                            
+                                        </div>
+                                        <a href="https://larepublica.pe/nota-de-prensa/2025/04/04/quinta-natura-un-proyecto-inmobiliario-que-combina-la-modernidad-con-el-entorno-natural-80444" class="ul-blog-title">Quinta Natura un proyecto inmobiliario que combina la modernidad con el entorno natural</a>
+                                        <p class="ul-blog-excerpt">Quinta Natura, presenta una oportunidad única en Arequipa, con lotes urbanos eco‑sostenibles desde 150 m², áreas comunes, iluminación LED, reciclaje inteligente y un diseño pensado para armonizar la vida contemporánea con el entorno verde. Si quieres conocer en detalle su ubicación estratégica, innovaciones tecnológicas, beneficios ecológicos y el impacto en la región, te invito a leer la nota completa en La República.</p>
+                                        <a href="https://larepublica.pe/nota-de-prensa/2025/04/04/quinta-natura-un-proyecto-inmobiliario-que-combina-la-modernidad-con-el-entorno-natural-80444" class="ul-btn ul-blog-btn">Read More <span class="icon"><i class="flaticon-aro-left"></i></span></a>
+                                    </div>
+                                </div>
+                            </div>
+                            <!-- single blog -->
+                            <div class="ul-blog-wrapper ul-blog--inner-2">
+                                <div class="ul-blog">
+                                    <div class="ul-blog-img">
+                                        <img src="assets/img/Hayat_Noticia_portada.jpg" alt="Blog Image">
+                                        <!-- date -->
+                                        <div class="date">
+                                            <span class="number">10</span>
+                                            <span class="txt">Mar</span>
+                                        </div>
+                                    </div>
+
+                                    <div class="ul-blog-txt">
+                                        <div class="ul-blog-infos">
+                                            
+                                        </div>
+                                        <a href="https://clubhayat.com/2025/03/10/participacion-feria-nexo-inmobiliario-2025/" class="ul-blog-title">Participación en la Feria Nexo Inmobiliario 2025</a>
+                                        <p class="ul-blog-excerpt">Anunciamos con orgullo que del 13 al 16 de marzo de 2025 formamos parte del evento inmobiliario más relevante del país, donde ofrecimos promociones exclusivas, asesoría personalizada y presentamos nuestras propuestas en Punta Sal y Zorritos, diseñadas para adaptarse a distintos estilos de vida y presupuestos Club Hayat. Si deseas descubrir en detalle cada una de nuestras pro1puestas, la experiencia compartida y cómo podemos ayudarte a encontrar la propiedad ideal, te invitamos a leer la nota completa en el sitio de Club Hayat..</p>
+                                        <a href="https://clubhayat.com/2025/03/10/participacion-feria-nexo-inmobiliario-2025/" class="ul-btn ul-blog-btn">Leer más <span class="icon"><i class="flaticon-aro-left"></i></span></a>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+
+                        <!-- pagination
+                        <div class="ul-pagination mt-0 border-top-0">
+                            <ul>
+                                <li><a href="#"><i class="flaticon-left-arrow"></i></a></li>
+                                <li class="pages">
+                                    <a href="#" class="active">01</a>
+                                    <a href="#">02</a>
+                                    <a href="#">03</a>
+                                    <a href="#">04</a>
+                                    <a href="#">05</a>
+                                </li>
+                                <li><a href="#"><i class="flaticon-next-1"></i></a></li>
+                            </ul>
+                        </div> -->
+                    </div>
+                    <!-- sidebar -->
+                    <div class="col-lg-4 col-md-5">
+                        <div class="ul-blog-sidebar">
+
+                            <!-- single widget / Recent Posts -->
+                            <div class="ul-blog-sidebar-widget posts">
+                                <h3 class="ul-blog-sidebar-widget-title ul-service-details-sidebar-widget-title">Noticias Recientes</h3>
+                                <div class="ul-blog-sidebar-widget-content">
+                                    <div class="ul-blog-sidebar-posts">
+                                        <!-- single post -->
+                                        <div class="ul-blog-sidebar-post">
+                                            <div class="img">
+                                                <img src="assets/img/solo-RULETA.png" alt="Post Image">
+                                            </div>
+
+                                            <div class="txt">
+                                                <span class="date">
+                                                    <span class="icon"><i class="flaticon-calendar"></i></span>
+                                                    <span>Agos 01, 2025</span>
+                                                </span>
+
+                                                <h4 class="title"><a href="noticia-sorteo.html">¡Gran Promoción Exclusiva en la Feria!</a></h4>
+                                            </div>
+                                        </div>
+
+                                        <!-- single post -->
+                                        <div class="ul-blog-sidebar-post">
+                                            <div class="img">
+                                                <img src="assets/img/noticia-feria/noticia-feria-arequipa.jpg" alt="Post Image">
+                                            </div>
+
+                                            <div class="txt">
+                                                <span class="date">
+                                                    <span class="icon"><i class="flaticon-calendar"></i></span>
+                                                    <span>Jul 24, 2025</span>
+                                                </span>
+
+                                                <h4 class="title"><a href="noticia-feria-arequipa.html">¡Estaremos presentes en la Feria Arequipa 2025!</a></h4>
+                                            </div>
+                                        </div>
+
+                                        <!-- single post -->
+                                        <div class="ul-blog-sidebar-post">
+                                            <div class="img">
+                                                <img src="assets/img/noticia-quinta-republica.jpg" alt="Post Image">
+                                            </div>
+
+                                            <div class="txt">
+                                                <span class="date">
+                                                    <span class="icon"><i class="flaticon-calendar"></i></span>
+                                                    <span>Abr 04, 2025</span>
+                                                </span>
+
+                                                <h4 class="title"><a href="noticia-quinta-natura.html">¡Nuestro proyecto Quinta Natura en La Republica!</a></h4>
+                                            </div>
+                                        </div>
+                                        <!-- single post -->
+                                        <div class="ul-blog-sidebar-post">
+                                            <div class="img">
+                                                <img src="assets/img/noticia-hayat-nexo.jpg" alt="Post Image">
+                                            </div>
+
+                                            <div class="txt">
+                                                <span class="date">
+                                                    <span class="icon"><i class="flaticon-calendar"></i></span>
+                                                    <span>Mar 10, 2025</span>
+                                                </span>
+
+                                                <h4 class="title"><a href="noticia-nexo-hayat.html">Estuvimos presentes en la Feria Nexo Inmobiliario 2025</a></h4>
+                                            </div>
+                                        </div>
+                                    </div>
+                                </div>
+                            </div>
+
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+        <!-- BLOG SECTION END -->
+    </main>
+
+
+    <!-- FOOTER SECTION START -->
+    <footer class="ul-footer">
+        <div class="ul-footer-top">
+            <div class="ul-container">
+                <div class="ul-footer-top-wrapper wow animate__fadeInUp">
+                    <!-- <div class="row ul-bs-row"> -->
+                    <!-- <div class="col-4"> -->
+                    <div class="ul-footer-about">
+                        <a href="index.html"><img src="assets/img/portafolio_Logo.png" alt="logo"></a>
+                        <p class="ul-footer-about-txt">Nuestras Redes Sociales</p>
+                        <div class="ul-footer-socials">
+                            <a href="#"><i class="flaticon-facebook"></i></a>
+                            <a href="#"><i class="flaticon-instagram"></i></a>
+                            <a href="https://pe.linkedin.com/in/cesar-del-valle-miculicich-5a7b9619a"><i class="flaticon-linkedin"></i></a>
+                        </div>
+                    </div>
+                    <!-- </div> -->
+
+                    <!-- <div class="col-7"> -->
+                    <div class="single-column">
+                        <div class="ul-footer-widget">
+                            <h3 class="ul-footer-widget-title">NUESTRA PÁGINA</h3>
+                            <div class="ul-footer-widget-links">
+                                <a href="#">Inicio</a>
+                                <a href="#Proyectos">Proyectos</a>
+                                <a href="#Equipo">Nuestro Equipo</a>
+                                <a href="#Clientes">Nuestros clientes</a>
+                                <a href="#Noticias">Noticias</a>
+                                <a href="#Contacto">Contacto</a>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="single-column">
+                        <div class="ul-footer-widget">
+                            <h3 class="ul-footer-widget-title">NUESTROS PROYECTOS</h3>
+
+                            <div class="ul-footer-widget-links">
+                                <a href="#Proyecto_Lugar">Arequipa</a>
+                                <a href="#Proyecto_Lugar">Piura</a>
+                                
+                            </div>
+                        </div>
+                        
+                    </div>
+                    <div class="single-column">
+                        <div class="ul-footer-widget">
+                            <h3 class="ul-footer-widget-title">NUESTRAS SEDES</h3>
+                            <div class="ul-footer-widget-links">
+                                <p>Lima – Av. Primavera 517, San Borja</p>
+                                <p>Piura – Av. Luis Montero 390, Miraflores Castilla</p>
+                                <p>Arequipa – José Santos Chocano 617, Umacollo</p>
+                                <!-- <ul>
+                                    <li>Lima – Av. Primavera 517, San Borja</li>
+                                    <li>Piura – Av. Luis Montero 390 Urb. Miraflores Castilla</li> 
+                                    <li>Arequipa – José Santos Chocano 617 - Umacollo</li>
+                                    
+                                </ul> -->
+                            </div>
+                        </div>
+                        
+                    </div>
+                    <!-- </div> -->
+                    <!-- </div> -->
+                </div>
+            </div>
+        </div>
+
+        <!-- footer bottom -->
+        <div class="ul-footer-bottom">
+            <p class="copyright-txt">&copy;2025 Portafolio. All rights reserved</p>
+        </div>
+
+        <!-- vector -->
+        <div class="ul-footer-vectors">
+            <img src="assets/img/footer-vector-img-1.png" alt="Footer Image" class="ul-footer-vector-1">
+            <img src="assets/img/footer-vector-img-2.png" alt="Footer Image" class="ul-footer-vector-2">
+        </div>
+    </footer>
+    <!-- FOOTER SECTION END -->
+
+
+    <!-- libraries JS -->
+    <script src="assets/vendor/bootstrap/bootstrap.bundle.min.js"></script>
+    <script src="assets/vendor/splide/splide.min.js"></script>
+    <script src="assets/vendor/splide/splide-extension-auto-scroll.min.js"></script>
+    <script src="assets/vendor/swiper/swiper-bundle.min.js"></script>
+    <script src="assets/vendor/slim-select/slimselect.min.js"></script>
+    <script src="assets/vendor/animate-wow/wow.min.js"></script>
+    <script src="assets/vendor/splittype/index.min.js"></script>
+    <script src="assets/vendor/mixitup/mixitup.min.js"></script>
+    <script src="assets/vendor/fslightbox/fslightbox.js"></script>
+
+    <!-- custom JS -->
+    <script src="assets/js/main.js"></script>
+    <script>
+        var modal = document.getElementById("miModal");
+        var btn = document.getElementById("leerMasBtn");
+        var span = document.getElementsByClassName("close")[0];
+
+        btn.onclick = function(event) {
+            event.preventDefault();
+            modal.style.display = "block";
+            }
+            span.onclick = function() {
+            modal.style.display = "none";
+        }
+        window.onclick = function(event) {
+            if (event.target == modal) {
+                modal.style.display = "none";
+            }
+        }
+
+    </script>
+
+
+</body>
+
+</html>
